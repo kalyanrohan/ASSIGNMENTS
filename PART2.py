@@ -6,8 +6,8 @@ degrees and radians."""
 
 Degrees= float(input("enter an angle: "))
 Radians= Degrees*3.14/180
-print(Degrees)
-print(Radians)
+print("Angle in degrees: ",Degrees)
+print("Angle in radians: ",Radians)
 
 #QUESTION 2
 """Write a program that calculates the average score on an exam. Assume we have a small class of only three
@@ -15,14 +15,14 @@ students. Assign each student’s score to variables called student1, student2, 
 these variables to find the average score. Assign the average to a variable called average. Print the student
 scores and the average score."""
 
-student1= float(input("enter student1's score: "))
-student2= float(input("enter student2's score: "))
-student3= float(input("enter student3's score: "))
+student1= float(input("enter student 1's score: "))
+student2= float(input("enter student 2's score: "))
+student3= float(input("enter student 3's score: "))
 average= (student1+student2+student3)/3
-print(student1)
-print(student2)
-print(student3)
-print(average)
+print("student 1: ",student1)
+print("student 2: ",student2)
+print("student 3: ",student3)
+print("average: ",average)
 
 #alternatively we can make a list first and divide the sum of the items in the list with the length of the list
 
@@ -55,7 +55,44 @@ Class 3: 3
 Class_1=32
 Class_2=45
 Class_3=51
-Number_of_students_in_each_class= {"Class 1":int(Class_1/5),"Class 2":int(Class_2/7),"Class 3":int(Class_3/6)}
-Remainder={"Class 1":int(Class_1%5),"Class 2":int(Class_2%7),"Class 3":int(Class_3%6)}
-print(Remainder)
+group= str({"Class 1":Class_1//5,"Class 2":Class_2//7,"Class 3":Class_3//6})
+leftover=str({"Class 1":Class_1%5,"Class 2":Class_2%7,"Class 3":Class_3%6})
+print("No. of students in each group: ",group)
+print("Leftover: ", leftover)
 
+
+#QUESTION 4
+"""
+The Python statements below have several errors. Identify the errors and correct them so that the
+program properly calculates the circumference of Jimmy’s pie (circumference = 2*pi*r).
+pi = ’3.14’
+pie.diameter = 55.4
+pie_radius = pie.diameter // 2
+circumference = 2 * pi ** pie_radius
+circumference-msg = ’Jimmy’s pie has a circumference: ’
+print(circumference-msg, circumference)
+The following demonstrates the output from the corrected program:
+Jimmy’s pie has a circumference: 173.956
+"""
+
+pi = 3.14
+pie_diameter = 55.4
+pie_radius = pie_diameter / 2
+circumference = 2 * pi * pie_radius
+circumference_msg = "Jimmy’s pie has a circumference: "
+print(circumference_msg, circumference)
+
+#QUESTION 5
+"""
+ Write a program that calculates the wavelength of a wave traveling at a constant velocity given the speed
+and the frequency. Use the formula lambda = v/f, where lambda is wavelength in meters, v is velocity in
+meters per second, and f is frequency in Hertz (cycles per second). Print the velocity, frequency, and
+wavelength. Assign each of these values to a variable and use the variables in your print() statements.
+The following demonstrates what the program prints:
+"""
+speed=float(input("enter speed: "))
+frequency=float(input("enter frequency: "))
+wavelength=speed/frequency
+print("The speed (m/s): ",speed)
+print("The frequency (Hz): ",frequency)
+print("The wavelength (m): ",wavelength)

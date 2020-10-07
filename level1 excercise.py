@@ -1,4 +1,28 @@
+#LEVEL 1
+#1.Print all elements of a list using for loop.
+lista=[1,2,3,4]
+for x in lista:
+    print(x)
 
+#2.Take inputs from user to make a list. 
+# Again take one input from user and search it in the list and delete that element, if found. Iterate over list using for loop.
+listb= []
+for x in range(10):
+    listb.append(eval(input("Enter a number: ")))
+listb.remove(eval(input("Remove a number: ")))
+print(f"listb: {listb}")
+
+#3.Print multiplication table of 14 from a list in which multiplication table of 12 is stored.
+multiplication_table_of_12=[x*12 for x in range(1,21)]
+print(f"table of 12: {multiplication_table_of_12}")
+multiplication_table_of_14=[y for y in multiplication_table_of_12 if y%14==0]
+print(f"table of 14: {multiplication_table_of_14}")
+
+#4.You are given with a list of integer elements. Make a new list which will store square of elements of previous list.
+a= [1,2,3,4,5,6,7,8,9,10]
+b=[x**2 for x in a]
+print(f"alist: {a}")
+print(f"square numbers: {b}")
 
 #5.Using range(1,101), make two list, one containing all even numbers and other containing all odd numbers.
 even=[x for x in range(1,101) if x%2==0]
@@ -11,7 +35,10 @@ four=[x for x in even if x%4==0]
 six=[x for x in even if x%6==0]
 eight=[x for x in even if x%8==0]
 ten=[x for x in even if x%10==0]
-five=[]
+five=[x for x in range(1,101) if x%5==0]
+seven=[x for x in range(1,101) if x%7==0]
+three=[x for x in range(1,101) if x%3==0]
+nine=[x for x in range(1,101) if x%9==0]
 for x in odd and even:
     if x%5==0:
         five.append(x)
@@ -21,6 +48,9 @@ print(f"divisible by 6: {six}")
 print(f"divisible by 8: {eight}")
 print(f"divisible by 10: {ten}")
 print(f"divisble by 5: {five}")
+print(f"divisble by 7: {seven}")
+print(f"divisble by 3: {three}")
+print(f"divisble by 9: {nine}")
 
 
 #7.From a list containing ints, strings and floats, make three lists to store them separately.

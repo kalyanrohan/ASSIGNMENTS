@@ -14,7 +14,8 @@ Check if the matrix is symmetric or not.
 """
 
 """
-3. Sorting refers to arranging data in a particular format. Sort a list of integers in ascending order ( without using built-in sorted function ). One of the algorithm is selection sort. Use below explanation of selection sort to do this.
+3. Sorting refers to arranging data in a particular format. Sort a list of integers in ascending order ( without using built-in sorted function ). 
+One of the algorithm is selection sort. Use below explanation of selection sort to do this.
 INITIAL LIST :
 2	3	1	45	15
 First iteration : Compare every element after first element with first element and if it is larger then swap. In first iteration, 2 is larger than 1. So, swap it.

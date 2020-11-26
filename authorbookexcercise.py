@@ -5,7 +5,7 @@ class Author:
         self.email=email
         self.gender=gender
 
-        if self.gender.lower() != "m" or "f":
+        if self.gender != "m" and self.gender != "f":
             raise TypeError("M or F")
 
     
@@ -61,10 +61,21 @@ class Book(Author):
         self.qty=qty
     
 
-    def toString(self,name,email,gender):
-        super().__init__(name,email,gender)
-        return f"Book={self.getName()}, Author[name={self.name},"
-        
-print("hello")
-print("hello")
+    def toString(self):
+        return f"Book={self.getName()},{self.author.toString()},price={self.price},qty={self.qty}"
+    
 
+    def getAuthorName(self):
+        return self.author.getName()
+
+    def getAuthorEmail(self):
+        return self.author.getEmail()
+
+    def getAuthorGender(self):
+        return self.author.getGender()
+
+b1=Author("rohan","123@gmail.com","m")
+b2=Book("geronimo stilton","shepard","20",2)
+
+print(b1.toString())
+print(b2.toString())

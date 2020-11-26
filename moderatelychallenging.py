@@ -70,7 +70,7 @@ class Teacher(Person):
         return (f"Teacher= {self.getName()}, address= {self.getAddress()}")
     
 
-
+print("hello")
     
     
 

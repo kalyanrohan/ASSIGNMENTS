@@ -61,4 +61,9 @@ class Book(Author):
         self.qty=qty
     
 
+    def toString(self,name,email,gender):
+        super().__init__(name,email,gender)
+        return f"Book={self.getName()}, Author[name={self.name},"
+        
+
         

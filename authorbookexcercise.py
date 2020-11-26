@@ -65,5 +65,6 @@ class Book(Author):
         super().__init__(name,email,gender)
         return f"Book={self.getName()}, Author[name={self.name},"
         
+print("hello")
+print("hello")
 
-print("hello world")   
